@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alstom.ouahouda.ofscanner.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OF:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="137dp"
+        android:layout_alignBaseline="@+id/OF"
+        android:layout_alignBottom="@+id/OF"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/OF"
+        android:layout_width="242dp"
+        android:layout_height="16dp"
+        android:text="[OF]"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="137dp"
+        android:layout_above="@+id/DESIGN"
+        android:layout_alignStart="@+id/DESIGN"
+        android:layout_marginBottom="21dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Réference: "
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="164dp"
+        android:layout_alignBaseline="@+id/REF"
+        android:layout_alignBottom="@+id/REF"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Désignation:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="191dp"
+        android:layout_alignBottom="@+id/DESIGN"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Week :"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="216dp"
+        android:layout_alignBaseline="@+id/WEEK"
+        android:layout_alignBottom="@+id/WEEK"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service :"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="247dp"
+        android:layout_alignBaseline="@+id/SERVICE"
+        android:layout_alignBottom="@+id/SERVICE"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/REF"
+        android:layout_width="243dp"
+        android:layout_height="18dp"
+        android:text="[REF]"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="164dp"
+        android:layout_above="@+id/WEEK"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/DESIGN"
+        android:layout_width="243dp"
+        android:layout_height="17dp"
+        android:text="[DESIGN]"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="191dp"
+        android:layout_above="@+id/REF"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:id="@+id/WEEK"
+        android:layout_width="243dp"
+        android:layout_height="18dp"
+        android:text="[WEEK]"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="216dp"
+        android:layout_above="@+id/SERVICE"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="19dp" />
+
+    <TextView
+        android:id="@+id/SERVICE"
+        android:layout_width="243dp"
+        android:layout_height="18dp"
+        android:text="[SERVICE]"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="246dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="121dp"
+        android:layout_height="142dp"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="295dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/SERVICE"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/barcodeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/progressBar"
+        android:layout_marginBottom="30dp"
+        android:layout_toEndOf="@+id/textView4"
+         />
+
+    <TextView
+        android:id="@+id/meesage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:text="TextView" />
+
+
+</RelativeLayout>
